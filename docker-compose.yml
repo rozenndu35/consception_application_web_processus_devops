@@ -8,3 +8,9 @@ services:
     build: ./dockerComposeNode
     ports:
       - "10.0.2.5:8081:8080"
+  reverse-proxy:
+    image: nginx
+    volumes:
+      - ./reverseproxyNginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "10.0.2.5:80:80"
