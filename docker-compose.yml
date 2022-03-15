@@ -1,0 +1,10 @@
+version: "2"
+services:
+  node1:
+    build: ./dokerfileNode
+    ports:
+      - "10.0.2.5:8080:8080"
+  node2:
+    build: ./dockerComposeNode
+    ports:
+      - "10.0.2.5:8081:8080"

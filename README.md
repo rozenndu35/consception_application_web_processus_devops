@@ -5,3 +5,4 @@
 
 ## Déployer un container NodeJS
 Voir dockerfileNode
+le dockercompose qui est present a la racine permet de lancer directement les deux conteneur
